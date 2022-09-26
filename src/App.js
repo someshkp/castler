@@ -19,6 +19,7 @@ function App() {
           .then((res) => setUsers([res.data.data]));
       };
       fetchData();
+      setNum("");
     } else {
       setError(true);
       setNum("");
